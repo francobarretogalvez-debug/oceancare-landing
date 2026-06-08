@@ -3,7 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>OceanCare — De huella a luz</title>
+<title>OceanCare — La mejor protección se ve | Bloqueador facial mineral SPF 45+</title>
+<meta name="description" content="Bloqueador facial mineral SPF 45+ con color, hecho en Perú. Protección para tu rostro en el mar, el deporte y el sol. Con cacao peruano. Pre-venta de fundadores." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="OceanCare — La mejor protección se ve" />
+<meta property="og:description" content="Bloqueador facial mineral SPF 45+ con color, hecho en Perú. Para el mar, el deporte y el sol. Pre-venta de fundadores." />
+<meta property="og:image" content="https://oceancare-web.vercel.app/oceancare-active-surfer.png" />
+<meta property="og:url" content="https://oceancare-web.vercel.app" />
+<meta property="og:site_name" content="OceanCare" />
+<meta property="og:locale" content="es_PE" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="OceanCare — La mejor protección se ve" />
+<meta name="twitter:description" content="Bloqueador facial mineral SPF 45+ con color, hecho en Perú. Para el mar, el deporte y el sol." />
+<meta name="twitter:image" content="https://oceancare-web.vercel.app/oceancare-active-surfer.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -75,6 +87,12 @@
   .btn:hover{background:var(--ink);transform:translateY(-1px);}
   .microcopy{font-size:12.5px;color:#6a6a6a;margin-top:14px;letter-spacing:.01em;}
   .microcopy b{color:var(--ocean);font-weight:600;}
+
+  /* trust strip */
+  .trust{border-top:1px solid rgba(26,26,26,.08);border-bottom:1px solid rgba(26,26,26,.08);background:rgba(255,255,255,.28);}
+  .trust .wrap{display:flex;flex-wrap:wrap;gap:14px 34px;justify-content:center;padding:18px 32px;}
+  .trust span{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:#5a5145;font-weight:600;}
+  .trust b{color:var(--ocean);}
 
   /* section base */
   section{position:relative;}
@@ -182,14 +200,14 @@
 <header class="hero">
   <div class="wrap">
     <div class="hero-copy">
-      <div class="eyebrow">Bloqueador mineral SPF 45+ · Con cacao peruano · Hecho en Perú</div>
-      <h1>Protege tu piel.<br>Te da <em>color.</em><br>La <em>nutre.</em></h1>
-      <p class="lede">Bloqueador 100% mineral SPF 45+ con color, enriquecido con cacao peruano, coco y karité. Protege, da color y nutre tu piel en un solo paso.</p>
+      <div class="eyebrow">Bloqueador facial mineral SPF 45+ · Para el agua y el sol · Hecho en Perú</div>
+      <h1>La mejor protección<br>se <em>ve.</em></h1>
+      <p class="lede">Bloqueador facial 100% mineral SPF 45+ con color. Para tu rostro en el mar, el deporte y el sol de todos los días — con cacao peruano que lo nutre.</p>
       <form class="signup" id="unirme" onsubmit="join(event)">
         <input type="email" placeholder="Tu correo" required aria-label="correo" />
         <button class="btn" type="submit">Quiero el mío</button>
       </form>
-      <p class="microcopy">Pre-venta abierta · Precio fundador <b>S/95</b> · solo <b>200 unidades</b>.</p>
+      <p class="microcopy">Pre-venta abierta · Precio fundador <b>S/95</b> · solo <b>200 unidades</b> (después sube).</p>
     </div>
     <div class="hero-img">
       <img src="oceancare-hero-logo2.png" alt="OceanCare bloqueador mineral con envase de bambú y logo OCEAN sobre piedra volcánica en la costa peruana" />
@@ -197,6 +215,14 @@
     </div>
   </div>
 </header>
+
+<!-- TRUST -->
+<section class="trust"><div class="wrap">
+  <span>SPF 45+ <b>testeado</b></span>
+  <span>Filtro <b>100% mineral</b></span>
+  <span><b>Registro sanitario</b></span>
+  <span>Hecho en <b>Perú</b></span>
+</div></section>
 
 <!-- RITUAL -->
 <section class="ritual pad">
@@ -253,13 +279,13 @@
 <!-- ACTIVE -->
 <section class="active">
   <div class="active-bg">
-    <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3DQJsyOb0GMfpVf27t7yxdao7qQ/hf_20260606_230347_4aae3ce6-6af8-4476-81f9-c7a250c10dcb.png" alt="Mujer corriendo en la costa con OceanCare" />
+    <img src="oceancare-active-surfer.png" alt="Surfista peruana con OceanCare en el rostro, en la costa" />
   </div>
   <div class="wrap">
     <div class="inner reveal">
-      <div class="eyebrow">Para mujeres que no paran</div>
-      <h2>Para tus días al sol.</h2>
-      <p>Bloqueador mineral con color y cacao peruano. Running, pádel, surf o el carro a las 7am: protección y cuidado de tu piel, en un solo paso.</p>
+      <div class="eyebrow">Para el mar y el movimiento</div>
+      <h2>Hecho para tus olas.</h2>
+      <p>Bloqueador facial mineral con color, pensado para surfear, correr o entrenar bajo el sol. Acompaña tu ritmo y se nota en tu cara — porque la mejor protección se ve.</p>
     </div>
   </div>
 </section>
@@ -282,6 +308,8 @@
     <h2>Preguntas</h2>
     <details><summary>¿Cuánto cuesta?</summary><p>El precio de pre-venta para fundadoras es <b>S/95</b>, limitado a las primeras 200 unidades. Después del lanzamiento sube al precio público.</p></details>
     <details><summary>¿Es para mí si no surfeo?</summary><p>Totalmente. OceanCare nació en la costa, pero es protección solar diaria con color para tu piel — playa, ciudad o el carro a las 7am.</p></details>
+    <details><summary>¿Es para el rostro?</summary><p>Sí, es un bloqueador facial. Se aplica con los dedos como un bálsamo y deja un velo de color parejo en tu cara.</p></details>
+    <details><summary>¿Sirve para surfear o hacer deporte?</summary><p>Para eso nació. Protección facial mineral para el mar, el sol y el movimiento — surf, running, lo que hagas bajo el sol.</p></details>
     <details><summary>¿Deja color en la piel?</summary><p>Sí, y esa es la idea. Es un bloqueador con color: deja un tono beige que da cobertura, como una base liviana, mientras protege y nutre tu piel.</p></details>
     <details><summary>¿Cuánta protección tiene? ¿Es mineral?</summary><p>SPF 45+, testeado. Filtro 100% mineral de óxido de zinc y titanio, sin filtros químicos como oxibenzona u octinoxato. Enriquecido con cacao peruano, coco, karité y vitamina E.</p></details>
     <details><summary>¿Cuándo me llega?</summary><p>Te damos fecha concreta de despacho al abrir la pre-venta (máximo 6 semanas después del cierre de lista).</p></details>
