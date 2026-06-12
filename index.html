@@ -94,6 +94,14 @@
   .trust span{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:#5a5145;font-weight:600;}
   .trust b{color:var(--ocean);}
 
+  /* cualidades / por qué funciona */
+  .benefits-band{background:var(--sand);}
+  .bgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;}
+  .benefit{text-align:center;padding:0 6px;}
+  .benefit h3{font-family:var(--serif);font-weight:400;font-size:21px;margin-bottom:10px;color:var(--ink);}
+  .benefit p{font-size:14px;color:#5a5145;font-weight:300;line-height:1.55;}
+  @media(max-width:860px){.bgrid{grid-template-columns:1fr 1fr;gap:26px;}}
+
   /* section base */
   section{position:relative;}
   .pad{padding:96px 0;}
@@ -202,7 +210,7 @@
     <div class="hero-copy">
       <div class="eyebrow">Bloqueador facial mineral SPF 45+ · Para el agua y el sol · Hecho en Perú</div>
       <h1>La mejor protección<br>se <em>ve.</em></h1>
-      <p class="lede">Bloqueador facial 100% mineral SPF 45+ con color. Para tu rostro en el mar, el deporte y el sol de todos los días — con cacao peruano que lo nutre.</p>
+      <p class="lede">Bloqueador facial 100% mineral SPF 45+ con color. Protege e hidrata tu piel en el mar, el deporte y el sol — para todos los que viven al aire libre. Con cacao peruano.</p>
       <form class="signup" id="unirme" onsubmit="join(event)">
         <input type="email" placeholder="Tu correo" required aria-label="correo" />
         <button class="btn" type="submit">Quiero el mío</button>
@@ -255,6 +263,20 @@
   </div>
 </section>
 
+<!-- CUALIDADES -->
+<section class="benefits-band pad">
+  <div class="wrap reveal">
+    <div class="eyebrow" style="text-align:center;">Por qué funciona</div>
+    <h2 style="text-align:center;font-size:clamp(30px,4vw,46px);font-family:var(--serif);font-weight:300;line-height:1.05;margin:14px 0 46px;">Hecho para el agua, <em style="font-style:italic;color:var(--ocean);">el sol y el deporte.</em></h2>
+    <div class="bgrid">
+      <div class="benefit"><h3>SPF 45+ mineral</h3><p>Filtro físico de óxido de zinc y titanio. Amplio espectro, testeado.</p></div>
+      <div class="benefit"><h3>Para el agua y el sudor</h3><p>Pensado para el mar, el surf y el deporte bajo el sol.</p></div>
+      <div class="benefit"><h3>Hidrata tu piel</h3><p>Cacao peruano, coco, karité y vitamina E que nutren mientras te proteges.</p></div>
+      <div class="benefit"><h3>No arde los ojos</h3><p>Filtro 100% mineral, suave — incluso entrenando o dentro del agua.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- FOUNDERS -->
 <section class="founders pad">
   <div class="wrap">
@@ -262,9 +284,9 @@
       <img src="oceancare-founders-surfer.png" alt="Surfista peruana con OceanCare en nariz y mejillas, junto a su tabla" />
     </div>
     <div class="reveal">
-      <div class="eyebrow">Por qué Lista de Fundadoras</div>
+      <div class="eyebrow">Por qué Lista de Fundadores</div>
       <h2>Estás antes que nadie.<br>Y eso <em>vale.</em></h2>
-      <p style="font-weight:300;color:#3a3a3a;max-width:42ch;">Estamos financiando el primer batch de este bloqueador mineral peruano. Las primeras 200 personas entran como Fundadoras, con beneficios que no se repiten:</p>
+      <p style="font-weight:300;color:#3a3a3a;max-width:42ch;">Estamos financiando el primer batch de este bloqueador mineral peruano. Las primeras 200 personas entran como Fundadores, con beneficios que no se repiten:</p>
       <ul class="benefits">
         <li><span class="mark">◇</span><span><b>Precio fundador S/95</b> — sube después del lanzamiento.</span></li>
         <li><span class="mark">◇</span><span>Envío gratis en tu primer pedido.</span></li>
@@ -296,8 +318,8 @@
     <h2>Cómo <em>funciona</em></h2>
     <div class="steps-grid">
       <div class="step"><div class="num">01</div><h3>Reservas tu unidad</h3><p>En pre-venta, a precio fundador de S/95.</p></div>
-      <div class="step"><div class="num">02</div><h3>Te avisamos primero</h3><p>Eres la primera en saber cuándo abre el despacho.</p></div>
-      <div class="step"><div class="num">03</div><h3>Aseguras tu precio</h3><p>Precio de fundadora, antes que el público.</p></div>
+      <div class="step"><div class="num">02</div><h3>Te avisamos primero</h3><p>Eres de los primeros en saber cuándo abre el despacho.</p></div>
+      <div class="step"><div class="num">03</div><h3>Aseguras tu precio</h3><p>Precio fundador, antes que el público.</p></div>
     </div>
   </div>
 </section>
@@ -306,7 +328,7 @@
 <section class="faq pad">
   <div class="reveal">
     <h2>Preguntas</h2>
-    <details><summary>¿Cuánto cuesta?</summary><p>El precio de pre-venta para fundadoras es <b>S/95</b>, limitado a las primeras 200 unidades. Después del lanzamiento sube al precio público.</p></details>
+    <details><summary>¿Cuánto cuesta?</summary><p>El precio de pre-venta de fundador es <b>S/95</b>, limitado a las primeras 200 unidades. Después del lanzamiento sube al precio público.</p></details>
     <details><summary>¿Es para mí si no surfeo?</summary><p>Totalmente. OceanCare nació en la costa, pero es protección solar diaria con color para tu piel — playa, ciudad o el carro a las 7am.</p></details>
     <details><summary>¿Es para el rostro?</summary><p>Sí, es un bloqueador facial. Se aplica con los dedos como un bálsamo y deja un velo de color parejo en tu cara.</p></details>
     <details><summary>¿Sirve para surfear o hacer deporte?</summary><p>Para eso nació. Protección facial mineral para el mar, el sol y el movimiento — surf, running, lo que hagas bajo el sol.</p></details>
@@ -344,7 +366,7 @@
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   // hero load reveal
   window.addEventListener('load',()=>document.querySelector('.hero-copy').style.opacity=1);
-  function join(e){e.preventDefault();const i=e.target.querySelector('input');alert('¡Listo! Te sumamos a la Lista de Fundadoras 🌊 ('+i.value+')\\n\\n[Demo — conectar a MailerLite/Shopify]');e.target.reset();}
+  function join(e){e.preventDefault();const i=e.target.querySelector('input');alert('¡Listo! Te sumamos a la Lista de Fundadores 🌊 ('+i.value+')\\n\\n[Demo — conectar a MailerLite/Shopify]');e.target.reset();}
 </script>
 </body>
 </html>
